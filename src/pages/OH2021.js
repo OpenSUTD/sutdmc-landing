@@ -76,8 +76,8 @@ const OH2021Comp = () => {
             <SubHeader>Games</SubHeader>
             <Text style={sectionText}>Starbucks, GV and Gong Cha vouchers to be won, first come first serve!</Text>
             <FeatureCardSection cardDetails={gameCardDetails}></FeatureCardSection>
-            {/* <Text style={sectionHeaders}>View our ASD Projects</Text>
-            <CTA href="/asd2020" style={ASDBtnStyles}>ASD Projects</CTA> */}
+            <SubHeader >View our ASD Projects</SubHeader>
+            <CTA href="/asd2020" style={ASDBtnStyles}>ASD Projects</CTA>
         </PageBase>
     )
 }

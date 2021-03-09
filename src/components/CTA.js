@@ -15,14 +15,25 @@ const CTA = styled.a`
   display: block;
   font-family: var(--font-primary);
   font-size: 24px;
-  min-width: 200px;
+  min-width: 50px;
   padding: 0.5rem;
   text-transform: uppercase;
   width: auto;
-
+  
   &:focus,
   &:hover {
     background: var(--color-accent-light);
+  }
+  @media (max-width: 1200px) {
+    font-size: 22px;
+  }
+
+  @media (max-width: 896px) {
+    font-size: 20px;
+  }
+
+  @media (max-width: 576px) {
+    font-size: 18px;
   }
 `;
 

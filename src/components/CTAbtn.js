@@ -15,17 +15,29 @@ const CTAbtn = styled.button`
   display: inline-block;
   font-family: var(--font-primary);
   font-size: 24px;
-  min-width: 200px;
+  min-width: 50px;
   padding: 0.5rem;
   text-transform: uppercase;
   width: auto;
   outline: none;
+  margin:10px;
+  @media (max-width: 1200px) {
+    font-size: 22px;
+  }
 
+  @media (max-width: 896px) {
+    font-size: 20px;
+  }
+
+  @media (max-width: 576px) {
+    font-size: 18px;
+  }
   &:focus,
   &:hover {
     background: var(--color-accent-light);
     cursor: none;
   }
+  
 `;
 
 const CTAbtnComp = React.forwardRef(({ selectUserType, children, ...others }, ref) => {
